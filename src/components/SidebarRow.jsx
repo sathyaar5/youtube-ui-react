@@ -1,13 +1,13 @@
 import React from "react";
+import { Box, Typography } from "@mui/material";
 
 function SidebarRow(props) {
-    return (
-        <div className="sidebar_row">
-            <props.icon className='sidebarRow_icon'/>
-            <h2 className="sidebarRow_title">{props.title}</h2>
-
-        </div>
-    )
+  return (
+    <Box className="sidebar_row">
+      <props.icon className="sidebarRow_icon" />
+      <Typography className="sidebarRow_title">{props.title}</Typography>
+    </Box>
+  );
 }
 
 export default SidebarRow;

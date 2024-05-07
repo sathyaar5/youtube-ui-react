@@ -1,215 +1,211 @@
-
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: white;
-  }
-  
-  .header_left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header_right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header_middle {
-    display: flex;
-    align-self: center;
-    width: 45%;
-    border: 1px solid lightgray;
-    flex:1;
-    margin-right: 10px;
-  }
-  
-  .SearchInput {
-    flex: 1;
-    border: none;
-    height: 25px !important;
-    padding-left: 10px;
-    font-size: 16px;
-  }
-  .header_input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+}
+
+.header_middle {
   display: flex;
   align-self: center;
   width: 45%;
-  }
-  
-  .header_right {
-    display: flex;
-    align-self: center;
-  }
-  
-  .header_searchBtn{
-    width: 50px !important;
-    background-color: #fafafa;
-    border-left: 1px solid lightgray;
-    color: gray;
-  }
-  
-  .header_icons{
-    margin-right: 20px;
-    color: rgb(83, 83, 83) !important;
-  }
-  
-  /* sidebarrow css */
-  .sidebar_row {
-    display: flex;
-    align-items: center;
-    height: 20px;
-    width: 192px;
-    padding:  10px 20px;
-  }
-  
-  .sidebarRow_icon {
-    color: #606060;
-    font-size: 22px !important;
-    margin-right: 20px;
-  }
-  
-  .sidebarRow_title {
-    margin-left: 5px; 
-    font-size: 14px;
-    font-weight: 500;
-    color: rgb(92, 92, 92);
-  }
-  .sidebar_row:hover {
-    background-color: lightgray;
-    cursor: pointer;
-  }
-  
-  
-  .parent_header{
-    position: sticky;
-    top: 0;
-    height: 100px;
-  }
-  
-  .sidebar{
-    width: 16%;
-    position: sticky;
-    top: 60px;
-    z-index: 50;
-    height: 92vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    left: 0;
-    background-color: white;
-    transition: 0.5s ease;
-    box-sizing: border-box;
+  border: 1px solid lightgray;
+  flex: 1;
+  margin-right: 10px;
+}
 
-  }
-  .sidebar.active{
-    left: -16%;
-  }
-  .sidebar hr{
-    height: 1px;
-    border: 0;
-    background-color: lightgray;
-    margin-top: 10px ;
-    margin-bottom: 10px;
-  }
-  
-  .sidebar_heading {
-    margin: 0 0 10px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: rgb(131, 131, 131);
-    font-weight: 550;
-  }
-  
-  
-  .subscriptionROw{
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    height: 35px;
-  }
-  
-  .channelLogo {
-    height: 24px;
-    width: 24px;
-    border-radius: 12px;
-    object-fit: contain;
-    margin-right: 15px;
-  }
-  
-  .liveImg {
-    height: 0px;
-    width: 0px;
-  }
-  .channelName {
+.SearchInput {
+  flex: 1;
+  border: none;
+  height: 25px !important;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.header_input {
+  display: flex;
+  align-self: center;
+  width: 45%;
+}
+
+.header_right {
+  display: flex;
+  align-self: center;
+}
+
+.header_searchBtn {
+  width: 50px !important;
+  background-color: #fafafa;
+  border-left: 1px solid lightgray;
+  color: gray;
+}
+
+.header_icons {
+  margin-right: 20px;
+  color: rgb(83, 83, 83) !important;
+}
+
+/* sidebarrow css */
+.sidebar_row {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 192px;
+  padding: 10px 20px;
+}
+
+.sidebarRow_icon {
+  color: #606060;
+  font-size: 22px !important;
+  margin-right: 20px;
+}
+
+.sidebarRow_title {
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(92, 92, 92);
+}
+.sidebar_row:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.parent_header {
+  position: sticky;
+  top: 0;
+  height: 100px;
+}
+
+.sidebar {
+  width: 16%;
+  position: sticky;
+  top: 60px;
+  z-index: 50;
+  height: 92vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  left: 0;
+  background-color: white;
+  transition: 0.5s ease;
+  box-sizing: border-box;
+}
+.sidebar.active {
+  left: -16%;
+}
+.sidebar hr {
+  height: 1px;
+  border: 0;
+  background-color: lightgray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar_heading {
+  margin: 0 0 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgb(131, 131, 131);
+  font-weight: 550;
+}
+
+.subscriptionROw {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  height: 35px;
+}
+
+.channelLogo {
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.liveImg {
+  height: 0px;
+  width: 0px;
+}
+.channelName {
   color: rgb(65, 65, 65);
   font-size: 14px;
   font-weight: 500;
-  }
-  
-  .left {
-    flex: 1px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .right {
-    flex: 0.17;
-    display: flex;
-    align-items: center;
-  }
-  
-  .footer {
-    padding: 0 20px;
-    font-size: 12px;
-    font-weight: 600;
-    color: rgb(75, 75, 75);
-    line-height: 8px;
-  }
-  
-  .sidebar::-webkit-scrollbar{
-    width: 8px !important;
-    border-radius: 50% !important;
-  }
-  
-  .sidebar::-webkit-scrollbar-track{
-    background-color: white;
-  }
-  
-  .sidebar::-webkit-scrollbar-thumb{
-    background-color: white !important;
-  }
-  
-  .sidebar:hover::-webkit-scrollbar-thumb{
-    background-color: rgb(184, 184, 184) !important;
-  }
+}
+
+.left {
+  flex: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  flex: 0.17;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  padding: 0 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(75, 75, 75);
+  line-height: 8px;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 8px !important;
+  border-radius: 50% !important;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: white !important;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(184, 184, 184) !important;
+}
 
 .mini_sidebar {
-    width: 5%;
-    position: fixed;
-    top: 80px;
-    z-index: 50;
-    height: 92vh;
-    background-color: white;
-    left: -100px;
-    transition: 0.5s ease;
+  width: 5%;
+  position: fixed;
+  top: 80px;
+  z-index: 50;
+  height: 92vh;
+  background-color: white;
+  left: -100px;
+  transition: 0.5s ease;
 }
-.mini_sidebar.active{
-    left:0;
+.mini_sidebar.active {
+  left: 0;
 }
-.miniDev{
-    padding: 10px 0;
-    text-align: center;
-    font-size: 10px;
-    color: rgb(112, 112, 112);
+.miniDev {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 10px;
+  color: rgb(112, 112, 112);
 }
 
 .miniDiv:hover {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 .videoCard {
@@ -220,111 +216,108 @@
   align-items: flex-start;
 }
 
-  
 .video-img {
-    height: 162px;
-    width: 295px;
-    margin-bottom: 0;
-  }
-  
-  .duration {
-    background-color: rgb(31, 31, 31);
-    width: 40px;
-    height: 18px;
-    text-align: center;
-    color: white;
-    border-radius: 3px;
-    position: absolute;
-    top: 135px;
-    right: 10px;
-    font-size: 12px;
-    font-weight: 600;
-    opacity: 0.9;
-  }
-  
-  .video-data {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    flex-grow: 1; 
-  }
-  
-  .channel-details {
-    margin-left: 10px;
-    flex-grow: 1;
-  }
-  
-  .channel-details p {
-    margin-top: -18px;
-    font-size: 14px;
-    color: rgb(122, 122, 122);
-    font-weight: 550;
-    margin-bottom: 15px;
-  }
-  
-  .channel-details h5 {
-    margin-top: -5px;
-    color: rgb(26, 26, 26);
-  }
-  
-  .watchLater{
-    position: absolute;
-    top: 10px;
-    background-color: black;
-    color: white !important;
-    right: 10px;
-    font-size: 20px !important;
-    padding: 4px 4px;
-    opacity: 0.8;
-    align-items: center;
-    border-radius: 3px;
-    display: none;
-  }
-  .playlistAdd {
-    position: absolute;
-    top: 50px;
-    background-color: black;
-    color: white !important;
-    right: 10px;
-    font-size: 20px !important;
-    padding: 4px 6px;
-    opacity: 0.8;
-    align-items: center;
-    border-radius: 3px;
-    display: none;
-  }
-  
-  .videoIcon {
-    font-size: 20px !important;
-  }
-  
-  .videoCard:hover .watchLater {
-    display: flex;
-  }
-  
-  .videoCard:hover .playlistAdd {
-    display: flex;
-  }
-  
-  .moreIcon {
-    color: rgb(131, 131, 131) !important;
-  }
-  
-  .moreIcon:hover {
-    color: rgb(83, 83, 83) !important;
-    cursor: pointer;
-  }
-  
-  .c-name:hover {
-    color: rgb(59, 59, 59);
-    cursor: pointer;
-  }
-  .homepage{
-    background-color: rgb(243, 243, 243);
-    margin-left: 16%;
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-  }
-  
-  
+  height: 162px;
+  width: 295px;
+  margin-bottom: 0;
+}
+
+.duration {
+  background-color: rgb(31, 31, 31);
+  width: 40px;
+  height: 18px;
+  text-align: center;
+  color: white;
+  border-radius: 3px;
+  position: absolute;
+  top: 135px;
+  right: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.video-data {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.channel-details {
+  margin-left: 10px;
+  flex-grow: 2;
+}
+
+.channel-details p {
+  margin-top: -0px;
+  font-size: 14px;
+  color: rgb(122, 122, 122);
+  font-weight: 550;
+  margin-bottom: 15px;
+}
+
+.channel-details h5 {
+  margin-top: -5px;
+  color: rgb(26, 26, 26);
+}
+
+.watchLater {
+  position: absolute;
+  top: 10px;
+  background-color: black;
+  color: white !important;
+  right: 10px;
+  font-size: 20px !important;
+  padding: 4px 4px;
+  opacity: 0.8;
+  align-items: center;
+  border-radius: 3px;
+  display: none;
+}
+.playlistAdd {
+  position: absolute;
+  top: 50px;
+  background-color: black;
+  color: white !important;
+  right: 10px;
+  font-size: 20px !important;
+  padding: 4px 6px;
+  opacity: 0.8;
+  align-items: center;
+  border-radius: 3px;
+  display: none;
+}
+
+.videoIcon {
+  font-size: 20px !important;
+}
+
+.videoCard:hover .watchLater {
+  display: flex;
+}
+
+.videoCard:hover .playlistAdd {
+  display: flex;
+}
+
+.moreIcon {
+  color: rgb(131, 131, 131) !important;
+}
+
+.moreIcon:hover {
+  color: rgb(83, 83, 83) !important;
+  cursor: pointer;
+}
+
+.c-name:hover {
+  color: rgb(59, 59, 59);
+  cursor: pointer;
+}
+.homepage {
+  background-color: rgb(243, 243, 243);
+  margin-left: 16%;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
